@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <section class="container d-flex align-items-center justify-content-center m-4">
+    <div id="search-input">
+      <input id="input-text" type="text" placeholder="Search">
+      <button onclick="btnSearch()" class="btn btn-success">Search</button>
+    </div>
+  </section>
+  <section class="container">
+    <div id="all-meals" class="row row-cols-1 row-cols-md-3 g-4">
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="meal-details" tabindex="-1" aria-labelledby="mealDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="meal-details-title">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="meal-details-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./js/meal.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
